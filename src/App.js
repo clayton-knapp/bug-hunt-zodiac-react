@@ -3,16 +3,19 @@ import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Main from './components/Main/Main'
-import { zodiac } from '../../data.js'
+import { zodiac } from './data.js'
 
 function App() {
+  // console.log(zodiac);
   return (
-    <h1>Header</h1>
-    <div className="App">
-      <Header />
-      <Main items={zodiac}/>
-      <Footer />
-    </div>
+    <>
+      {/* <h1>Header</h1> */}
+      <div className="App">
+        <Header />
+        <Main items={zodiac} />
+        <Footer />
+      </div>
+    </>
   )
 }
 
